@@ -1,4 +1,4 @@
-package sench;
+package sench.remote;
 
 /**
  * Created by zhaoshengqi on 2018/4/10.

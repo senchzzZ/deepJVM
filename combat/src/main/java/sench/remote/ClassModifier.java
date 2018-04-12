@@ -1,4 +1,4 @@
-package sench;
+package sench.remote;
 
 
 import sench.utils.ByteUtils;

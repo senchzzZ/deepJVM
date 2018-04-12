@@ -1,4 +1,4 @@
-package sench;
+package sench.remote;
 
 import java.lang.reflect.Method;
 

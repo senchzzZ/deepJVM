@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/combat/combat.iml" filepath="$PROJECT_DIR$/combat/combat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deepJVM.iml" filepath="$PROJECT_DIR$/deepJVM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaC/javaC.iml" filepath="$PROJECT_DIR$/javaC/javaC.iml" />
+    </modules>
+  </component>
+</project>
