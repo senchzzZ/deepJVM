@@ -1,4 +1,4 @@
-package sench.anoprocessor;
+package sench.classprocessor;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;
@@ -7,6 +7,7 @@ import javax.lang.model.element.TypeElement;
 import java.util.Set;
 
 /**
+ * 注意编译注册processor时的包名（根目录中指定）
  * Created by zhaoshengqi on 2018/4/12.
  */
 @SupportedAnnotationTypes("*")

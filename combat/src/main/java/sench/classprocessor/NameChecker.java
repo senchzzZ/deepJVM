@@ -1,9 +1,8 @@
-package sench.anoprocessor;
+package sench.classprocessor;
 
 import javax.annotation.processing.Messager;
 import javax.annotation.processing.ProcessingEnvironment;
 import javax.lang.model.element.*;
-import javax.lang.model.util.ElementScanner6;
 import javax.lang.model.util.ElementScanner8;
 
 import java.util.EnumSet;
@@ -25,19 +24,7 @@ public class NameChecker {
         this.messager = processsingEnv.getMessager();
     }
 
-    /**
-     * 对Java程序命名进行检查,根据《Java语言规范(第3版)》 第6.8节的要求,Java程序命名应当符合下列格式：
-     * *
-     * <ul>
-     * <li>类或接口：符合驼式命名法,首字母大写。
-     * <li>方法：符合驼式命名法,首字母小写。
-     * <li>字段：
-     * <ul>
-     * <li>类、 实例变量：符合驼式命名法,首字母小写。
-     * <li>常量：要求全部大写。
-     * </ul>
-     * </ul>
-     */
+
     public void checkNames(Element element) {
         nameCheckScanner.scan(element);
     }

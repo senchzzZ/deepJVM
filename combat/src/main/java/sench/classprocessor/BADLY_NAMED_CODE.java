@@ -1,4 +1,4 @@
-package sench.anoprocessor;
+package sench.classprocessor;
 
 /**
  * Created by zhaoshengqi on 2018/4/12.
