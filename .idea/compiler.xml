@@ -6,14 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="combat" />
         <module name="javaC" />
         <module name="remote-executor" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
+      <module name="combat" target="1.8" />
       <module name="deepJVM" target="1.8" />
       <module name="javaC" target="1.8" />
-      <module name="remote-executor" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

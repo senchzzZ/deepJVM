@@ -1,4 +1,4 @@
-package sench.remote;
+package tech.sench.remote;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;

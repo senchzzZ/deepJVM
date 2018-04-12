@@ -1,4 +1,4 @@
-package sench.utils;
+package tech.sench.utils;
 
 /**
  * Created by zhaoshengqi on 2018/4/10.

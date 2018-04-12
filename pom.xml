@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>javaC</module>
-        <module>remote-executor</module>
+        <module>combat</module>
     </modules>
 
 

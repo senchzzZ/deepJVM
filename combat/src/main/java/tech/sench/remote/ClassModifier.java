@@ -1,7 +1,7 @@
-package sench.remote;
+package tech.sench.remote;
 
 
-import sench.utils.ByteUtils;
+import tech.sench.utils.ByteUtils;
 
 /**
  * Created by zhaoshengqi on 2018/4/10.

@@ -1,4 +1,4 @@
-package sench.classprocessor;
+package tech.sench.processor;
 
 import javax.annotation.processing.Messager;
 import javax.annotation.processing.ProcessingEnvironment;

@@ -1,4 +1,5 @@
-import sench.utils.ByteUtils;
+import tech.sench.utils.ByteUtils;
+
 
 /**
  * Created by zhaoshengqi on 2018/4/11.
@@ -9,5 +10,7 @@ public class MainFo {
         System.out.println("C".getBytes());
         System.out.println(Integer.toHexString(ByteUtils.bytes2Int("C".getBytes(),0,"C".getBytes().length)));
         System.out.println(Integer.toBinaryString(Byte.MAX_VALUE));
+
     }
+
 }

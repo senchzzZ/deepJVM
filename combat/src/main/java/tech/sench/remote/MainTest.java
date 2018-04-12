@@ -1,4 +1,4 @@
-package sench.remote;
+package tech.sench.remote;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.io.InputStream;
  */
 public class MainTest {
     public static void main(String[] args) throws IOException {
-        InputStream is = new FileInputStream("D:\\Workspace\\deepJVM\\remote-executor\\target\\classes\\sench\\TestClass.class");
+        InputStream is = new FileInputStream("D:\\Workspace\\deepJVM\\remote-executor\\target\\classes\\tech.sench\\TestClass.class");
         byte[] b = new byte[is.available()];
         is.read(b);
         is.close();

@@ -1,4 +1,4 @@
-package sench.remote;
+package tech.sench.remote;
 
 import java.lang.reflect.Method;
 
@@ -9,7 +9,7 @@ public class JavaClassExecuter {
     public static String execute(byte[] classByte) {
         HackSystem.clearBuffer();
         ClassModifier cm = new ClassModifier(classByte);
-        byte[] modiBytes = cm.modifyUTF8Constant("java/lang/System", "tech/sench/HackSystem");
+        byte[] modiBytes = cm.modifyUTF8Constant("java/lang/System", "tech/tech.sench/HackSystem");
         HotSwapClassLoader loader = new HotSwapClassLoader();
         Class clazz = loader.loadByte(modiBytes);
         try {

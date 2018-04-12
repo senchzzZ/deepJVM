@@ -1,4 +1,4 @@
-package sench.remote;
+package tech.sench.remote;
 
 /**
  * 开放defineClass方法

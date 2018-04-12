@@ -1,4 +1,4 @@
-package sench.classprocessor;
+package tech.sench.processor;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;

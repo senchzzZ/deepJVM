@@ -1,4 +1,4 @@
-package sench.classprocessor;
+package tech.sench.processor;
 
 /**
  * Created by zhaoshengqi on 2018/4/12.
