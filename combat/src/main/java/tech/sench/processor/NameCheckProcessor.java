@@ -7,10 +7,11 @@ import javax.lang.model.element.TypeElement;
 import java.util.Set;
 
 /**
+ * 检查指定annotation的语法格式
  * 注意编译注册processor时的包名（根目录中指定）
  * Created by zhaoshengqi on 2018/4/12.
  */
-@SupportedAnnotationTypes("*")
+@SupportedAnnotationTypes("*")//表示所有class类型
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class NameCheckProcessor extends AbstractProcessor {
 

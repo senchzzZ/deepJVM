@@ -52,8 +52,7 @@ public class NameChecker {
         public Void visitExecutable(ExecutableElement e, Void p) {
             if (e.getKind() == METHOD) {
                 Name name = e.getSimpleName();
-                if
-                        (name.contentEquals(e.getEnclosingElement().getSimpleName()))
+                if(name.contentEquals(e.getEnclosingElement().getSimpleName()))
                     messager.printMessage(WARNING, "一个普通方法" + name + "不应当与类名重复,避免与构造函数产生混淆", e);
                 checkCamelCase(e, false);
             }
