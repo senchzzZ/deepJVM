@@ -32,8 +32,8 @@ public class CglibMetaspaceOOM {
             }
 
         }catch (Exception e){
-            e.printStackTrace();
             System.out.println("第"+i+"次生成出现 metaspace 溢出问题");
+            e.printStackTrace();
         }
     }
     static class OOMClass{}
