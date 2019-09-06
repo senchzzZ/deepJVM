@@ -27,7 +27,7 @@ public class DynamicProxyTest {
 
         //生成代理类文件
         byte[] bytes = ProxyGenerator.generateProxyClass("$Proxy", new Class[]{Iface.class});
-        FileOutputStream out = new FileOutputStream(new File("/Users/zhaoshengqi/Workspace/eg-the-way/$Proxy0.class"));
+        FileOutputStream out = new FileOutputStream(new File("/Users/zhaoshengqi/Workspace/deepJVM/combat/$Proxy0.class"));
         out.write(bytes);
         out.flush();
         out.close();
