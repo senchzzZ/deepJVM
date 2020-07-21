@@ -1,4 +1,3 @@
-/*
 package tech.sench.dynamic;
 
 
@@ -9,15 +8,15 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-*/
 /**
- * java8-
+ * java9+
+ * 生成的路径为根目录+tech.sench.dynamic
  * Created by zhaoshengqi on 2018/6/7.
- *//*
-
-public class DynamicProxyTest {
+ */
+public class DynamicProxyTestJDK9 {
 
     public static void main(String[] args) throws IOException {
+        System.getProperties().put("jdk.proxy.ProxyGenerator.saveGeneratedFiles","true");
         //Iface iface = (Iface) new DynamicHandler().bind(new IfaceImpl());
         Iface i = new IfaceImpl();
         DynamicHandler dynamicHandler = new DynamicHandler(i);
@@ -29,11 +28,11 @@ public class DynamicProxyTest {
         iface.hi2("ssss");
 
         //生成代理类文件
-        byte[] bytes = ProxyGenerator.generateProxyClass("$Proxy", new Class[]{Iface.class});
+        /*byte[] bytes = ProxyGenerator.generateProxyClass("$Proxy", new Class[]{Iface.class});
         FileOutputStream out = new FileOutputStream(new File("/Users/zhaoshengqi/Workspace/deepJVM/combat/$Proxy0.class"));
         out.write(bytes);
         out.flush();
-        out.close();
+        out.close();*/
     }
 
     interface Iface{
@@ -54,14 +53,12 @@ public class DynamicProxyTest {
             System.out.println("hi2 " + s);
         }
     }
-    */
-/*static class IfaceImpl2 implements Iface{
+    /*static class IfaceImpl2 implements Iface{
         @Override
         public void hi() {
             System.out.println("lue lue lue");
         }
-    }*//*
-
+    }*/
 
     static class DynamicHandler implements InvocationHandler{
         Object o;
@@ -78,4 +75,3 @@ public class DynamicProxyTest {
         }
     }
 }
-*/

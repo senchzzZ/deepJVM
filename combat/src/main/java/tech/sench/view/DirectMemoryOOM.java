@@ -1,9 +1,12 @@
+/*
 package tech.sench.view;
+
 
 import com.sun.prism.impl.BufferUtil;
 
 import java.nio.ByteBuffer;
 
+*/
 /**
  * -XX:+PrintGCDetails
  *
@@ -12,7 +15,8 @@ import java.nio.ByteBuffer;
  * -XX:MaxDirectMemorySize=2M
  *
  * Created by zhaoshengqi on 2018/4/13.
- */
+ *//*
+
 public class DirectMemoryOOM {
 
     public static void main(String[] args) {
@@ -20,3 +24,4 @@ public class DirectMemoryOOM {
         System.out.println(b);
     }
 }
+*/

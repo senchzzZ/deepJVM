@@ -23,7 +23,7 @@ public class InvokeDynamicTest {
     private static MethodType MT_BootstrapMethod() {
         return MethodType
                 .fromMethodDescriptorString(
-                        "(Ljava/lang/invoke/MethodHandles $Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+                        "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
                         null);
     }
 
