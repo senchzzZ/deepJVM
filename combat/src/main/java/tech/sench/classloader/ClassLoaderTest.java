@@ -7,7 +7,7 @@ import java.lang.reflect.Field;
 /**
  * Created by zhaoshengqi on 2018/6/5.
  */
-public class ClassLoaderTest extends LoaderExtends{
+public class ClassLoaderTest extends LoaderExtends {
 
 
     public static void main(String[] args) throws Exception {
@@ -33,7 +33,7 @@ public class ClassLoaderTest extends LoaderExtends{
 
         Class clazz = myLoader.loadClass("tech.sench.classloader.ClassLoaderTest");
 
-        Object obj = clazz.newInstance();
+        Object obj = clazz.getDeclaredConstructor().newInstance();
         System.out.println(obj.getClass());
         System.out.println(obj instanceof ClassLoaderTest);
     }

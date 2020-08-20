@@ -12,7 +12,7 @@ public class DoopRun {
             try {
                 MyClassLoader loader = new MyClassLoader("/Users/zhaoshengqi/Workspace/deepJVM/combat/target/classes/");
                 Class cls = loader.loadClass("tech.sench.classloader.hotswap.DemoA");
-                Object demoA = cls.newInstance();
+                Object demoA = cls.getDeclaredConstructor().newInstance();
                 Method m = demoA.getClass().getDeclaredMethod("hot",new Class[]{});
                 m.invoke(demoA, new Object[]{});
                 Thread.sleep(1000);

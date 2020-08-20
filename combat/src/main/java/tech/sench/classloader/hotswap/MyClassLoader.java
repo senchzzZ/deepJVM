@@ -16,6 +16,7 @@ public class MyClassLoader extends ClassLoader {
         this.fileName = fileName;
     }
 
+    @Override
     protected Class<?> findClass(String className) throws ClassNotFoundException {
         Class clazz = this.findLoadedClass(className);
         if (null == clazz) {
@@ -48,31 +49,7 @@ public class MyClassLoader extends ClassLoader {
         }
         return clazz;
     }
-    private byte[] loadClassBytes(String className) throws
-            ClassNotFoundException {
-        try {
-            String classFile = getClassFile(className);
-            FileInputStream fis = new FileInputStream(classFile);
-            FileChannel fileC = fis.getChannel();
-            ByteArrayOutputStream baos = new
-                    ByteArrayOutputStream();
-            WritableByteChannel outC = Channels.newChannel(baos);
-            ByteBuffer buffer = ByteBuffer.allocateDirect(1024);
-            while (true) {
-                int i = fileC.read(buffer);
-                if (i == 0 || i == -1) {
-                    break;
-                }
-                buffer.flip();
-                outC.write(buffer);
-                buffer.clear();
-            }
-            fis.close();
-            return baos.toByteArray();
-        } catch (IOException fnfe) {
-            throw new ClassNotFoundException(className);
-        }
-    }
+
     private String getClassFile(String name) {
         StringBuffer sb = new StringBuffer(fileName);
         name = name.replace('.', File.separatorChar) + ".class";
